@@ -1,0 +1,38 @@
+.section1{
+    width: 80%;    
+}
+
+.img1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img1 img{
+    border-radius: 3vh;
+    margin: 10vh;
+
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.botones button{
+    width: 9%;
+    height: 4vh;
+    border-radius: 1vh;
+}
+
+#miImagen {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease;
+}
+
+#miImagen grayscale {
+    filter: grayscale(100%);
+}
