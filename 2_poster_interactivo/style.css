@@ -19,6 +19,8 @@
     position: absolute;
     top: 46%;
     left: 20%;
+    cursor: pointer;
+    animation: move 3s ease infinite;
 }
 
 .moneda1{
@@ -39,6 +41,7 @@
     position: absolute;
     top: 30%;
     left: 51%;
+    animation: movee 20s ease infinite;
 }
 
 .corazon{
@@ -54,6 +57,20 @@
     left: 87%;
     cursor: pointer;
 }
+
+@keyframes move{
+    25%{transform: translateX(-60px);}
+    50%{transform: translateX(0px);}
+    75%{transform: translateX(60px);}
+}
+
+@keyframes movee{
+    25%{transform: translateX(-60px);}
+    50%{transform: translateX(0px);}
+    75%{transform: translateX(60px);}
+}
+
+
 
 .saltar{
     animation: salto 0.6s ease forwards;
