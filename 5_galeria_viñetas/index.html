@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster interactivo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div class="hud">
+            <div class="hud-item">
+                <img src="./assets/grillo.png" alt="grillo">
+                <span id="contador-grillos">0</span> 
+            </div>
+             <div class="hud-item">
+                <img src="./assets/manzana.png" alt="manzana">
+                <span id="contador-manzanas">0</span>
+            </div>
+
+
+            <div>
+                  <audio id="audio-fondo">
+                       <source src="./assets/sonido fondo.mp3" type="audio/ogg">
+                       Your browser does not support the audio tag.
+                </audio>
+                  <div class="buttons">
+                <button id="play-audio">Play</button>
+                <button id="stop-audio">Stop</button>
+            </div>
+            </div>
+
+          
+         </div>
+    <section class="s1">
+        <h1 class="titulo">Encuentra los grillos</h1>
+        <h1 class="titulo-2">Encuentra las manzanas</h1>
+         <div class="pantalla-1">
+
+            <img class="fondo-1" src="./assets/fondo.png" alt="">
+            <img class="arbusto-1" src="./assets/arbusto.png" alt="">
+            <img class="flor-1" src="./assets/flores.png" alt="">
+            <img id="misol" class="sol-1" src="./assets/sol.png" alt="">
+            <img class="mariposa-1" src="./assets/mariposaa.png" alt="">
+            <img id="play-stop-g1" class="grin grillo-1" src="./assets/grillo.png" alt="">
+            <img id="play-stop-g2" class="grin grillo-2" src="./assets/grillo.png" alt="">
+            <img id="play-stop-g3" class="grin grillo-3" src="./assets/grillo.png" alt="">
+            <img id="play-stop-m1" class="apple manzana-1" src="./assets/manzana.png" alt="">
+            <img id="play-stop-m2" class="apple manzana-2" src="./assets/manzana.png" alt="">
+            <img  id="play-stop-m3" class="apple manzana-3" src="./assets/manzana.png" alt="">
+
+
+            
+        </div>
+    </section>
+   
+
+    <script src="./app.js"></script>
+</body>
+</html>

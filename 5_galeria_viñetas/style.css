@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgba(89, 158, 89, 0.822);
+   animation: cambiocolor 7s infinite alternate;
+}
+
+@keyframes cambiocolor{ 
+    from{background-color: rgba(89, 158, 89, 0.822);}
+    to{background-color: rgba(238, 145, 24, 0.767);}
+}
+
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding-top: 3vh;
+    text-align: center;
+    background-color: beige;
+    height: 15vh;
+}
+
+.titulo-2{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -6vh;
+}
+ 
+.pantalla-1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    margin-top: 4vh;
+    overflow: hidden;
+}
+
+.fondo-1{
+    width: 60%;
+    height: 80vh;
+}
+
+
+.arbusto-1{
+    width: 24%;
+    position: absolute;
+    top: -2.5vh;
+    left: 39vh;
+    animation: infinite ease 1s arbusto;
+}
+
+@keyframes arbusto{
+    50%{
+        transform: translateY(-.5vh) rotate(-2deg);
+    }
+}
+
+.flor-1{
+    width: 22%;
+    position: absolute;
+    top: 46vh;
+    left: 103vh;
+    animation: florcorre 8s ease-in-out infinite;
+}
+
+
+@keyframes florcorre{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+.sol-1{
+    width: 15%;
+    position: absolute;
+    top: 29vh;
+    left: 82vh;
+}
+
+
+.mariposa-1{
+    width: 12%;
+    position: absolute;
+    top: 40vh;
+    left: 53vh;
+    animation: mariposa 8s ease-in-out infinite;
+}
+
+@keyframes mariposa{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.grillo-1{
+    position: absolute;
+    width: 1%;
+    top: 52vh;
+    left: 147vh;
+}
+
+.grillo-2{
+    position: absolute;
+    width: 1%;
+    top: 11vh;
+    right: 41vh;
+}
+
+.grillo-3{
+    position: absolute;
+    width: 1%;
+    top: 6vh;
+    left: 95vh;
+    
+}
+
+.manzana-1{
+    position: absolute;
+    width: 2%;
+    top: 7vh;
+    left: 94vh;
+}
+
+.manzana-2{
+    position: absolute;
+    width: 4%;
+    top: 17vh;
+    left: 119vh;
+}
+
+.manzana-3{
+    position: absolute;
+    width: 3%;
+    top: 20vh;
+    left: 70vh;
+}
+
+
+
+.hud {
+  position: absolute;
+  top: 35px;
+  right: 675px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: white;
+  z-index: 1000;
+}
+
+.hud-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.hud-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.desaparecer{
+    animation: salto 0.6s ease forwards;
+}
+
+@keyframes salto{
+    0%{transform: translateY(0); opacity: 1;}
+    30%{transform: translateY(-60px);}
+    100%{transform: translateY(0px); opacity: 0;}
+}
+
+
+button {
+    background-color: #191b19;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 80px;
+    height: 3.5vh;
+    margin: 3px;
+    transform: translateX(-175px);
+}
+
+button:hover {
+    background-color: #6ea872;
+}
