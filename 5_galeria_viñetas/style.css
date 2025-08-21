@@ -211,3 +211,24 @@ button {
 button:hover {
     background-color: #6ea872;
 }
+
+
+.d-none{
+    display: none;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+    margin-left: 43vh;
+}
+
+.filtro-2{
+    filter: sepia();
+}
+
+.filtro-3{
+    filter: grayscale();
+}
